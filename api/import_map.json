@@ -1,0 +1,9 @@
+{
+	"imports": {
+		"@src/": "./src/",
+		"@lib/": "./src/lib/",
+		"$std/": "https://deno.land/std@0.167.0/",
+		"drash/": "https://deno.land/x/drash@v2.7.1/",
+		"deta": "https://esm.sh/deta@1.1.0"
+	}
+}

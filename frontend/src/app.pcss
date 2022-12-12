@@ -1,0 +1,62 @@
+
+/* CORE */
+
+html, body {
+    @apply p-0 m-0;
+}
+body {
+    @apply text-[#322f35] bg-[#faf6f4];
+}
+body main {
+    @apply mx-auto max-w-4xl min-w-[50ch] w-full my-24 px-4;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    @apply text-4xl font-bold;
+}
+h2 {
+    @apply text-2xl font-bold;
+}
+h3 {
+    @apply text-xl font-bold;
+}
+h4 {
+    @apply text-lg font-bold;
+}
+
+p code {
+    @apply text-base font-mono py-1 px-3 mx-1 bg-amber-400 rounded-xl;
+}
+
+/* BUTTONS */
+button:not(.reset) {
+    @apply w-full py-3 px-3;
+    @apply rounded-xl bg-[#322f35] text-white hover:bg-[#4e4a51] transition-all duration-300 ease-in-out;
+}
+button[type="submit"]:not(.reset) {
+    @apply w-fit py-3 px-8;
+    @apply rounded-xl bg-[#322f35] text-white hover:bg-[#4e4a51] transition-all duration-300 ease-in-out;
+}
+button:disabled:not(.reset),
+button[disabled]:not(.reset) {
+    @apply bg-[#6a676c] hover:bg-[#6a676c] cursor-not-allowed;
+}
+
+/* INPUTS */
+input {
+    @apply w-full py-3 px-4;
+    @apply rounded-xl border border-gray-200;
+    /*@apply focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent;*/    
+}
+input:focus {
+    @apply outline-none ring-0 border-amber-400;
+}
+textarea {
+    @apply w-full py-3 px-4;
+    @apply rounded-xl border border-gray-200;
+    /*@apply focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent;*/    
+}
+textarea:focus {
+    @apply outline-none ring-0 border-amber-400;
+}
